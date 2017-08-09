@@ -1,0 +1,7 @@
+n=int(input())
+i=0
+country= set()
+while i<n:
+    country.add(input().upper())
+    i += 1
+print(len(country))
