@@ -1,0 +1,8 @@
+A=set(map(int,input().split()))
+n = int(input())
+count = 0
+for i in range(n):
+    arr=set(map(int, input().split()))
+    if len(arr.difference(A)) == 0 and len(A.difference(arr)) >= 1:
+        count += 1
+print(count == n) 
