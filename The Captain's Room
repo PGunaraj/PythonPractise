@@ -1,7 +1,4 @@
 k=int(input())
 arr=list(map(int,input().split()))
 uniq=set(arr)
-for i in uniq:
-    if arr.count(i)==1:
-        print(i)
-        break
+print(((sum(uniq)*k)-(sum(arr)))//(k-1))
