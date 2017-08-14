@@ -1,0 +1,10 @@
+K,M=[int(x) for x in input().split()]
+arrays = [map(int, input().split()[1:]) for _ in range(K)]
+
+from itertools import product
+possible_combination = list(product(*arrays))
+
+def func(nums):
+    return sum(x*x for x in nums) % M
+
+print(max(list(map(func, possible_combination))))
