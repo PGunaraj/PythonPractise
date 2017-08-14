@@ -1,0 +1,8 @@
+from collections import OrderedDict
+li=OrderedDict()
+for i in range(int(input())):
+    word=input()
+    li.setdefault(word,0)
+    li[word]+=1
+print(len(li))
+print(*li.values())
