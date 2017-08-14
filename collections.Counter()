@@ -1,0 +1,12 @@
+import collections
+
+n=int(input())
+c=collections.Counter(map(int,input().split()))
+l=int(input())
+income=0
+for i in range(l):
+    size,price=map(int,(input().split()))
+    if c[size]:
+        income += price
+        c[size] -= 1
+print(income)
