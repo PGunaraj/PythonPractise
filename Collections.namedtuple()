@@ -1,0 +1,5 @@
+from collections import namedtuple
+n,student=int(input()),namedtuple('student',input().split())
+s=sum([float(stud.MARKS) for stud in [student(*input().split()) for i in range(n)]])
+print("{0:,.2f}".format(s/n))
+
