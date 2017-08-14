@@ -1,3 +1,0 @@
-from itertools import combinations
-string,k=input().split()
-print(*["".join(j) for i in range(1,int(k)+1) for j in combinations(sorted(string),i)], sep="\n")
