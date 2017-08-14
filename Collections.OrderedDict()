@@ -1,0 +1,9 @@
+from collections import OrderedDict
+n=int(input())
+li=OrderedDict()
+for i in range(n):
+    item_name,price = input().rsplit(None,1)
+    li.setdefault(item_name,0)
+    li[item_name] += int(price)
+for i in li:
+    print(i,li[i])
